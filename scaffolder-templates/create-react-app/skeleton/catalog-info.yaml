@@ -12,13 +12,3 @@ spec:
   type: website
   lifecycle: experimental
   owner: ${{values.owner | dump}}
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: ${{values.destination.owner}}
-spec:
-  profile:
-    displayName: ${{values.destination.owner}}
-    email: ${{values.destination.owner}}@example.com
-  memberOf: [guests]
